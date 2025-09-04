@@ -9,7 +9,7 @@ return new class extends Migration {
     {
         Schema::create('otps', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->morphs('otpable');
+            $table->uuidMorphs('otpable');
             $table->longText('secret');
             $table->enum('type', ['totp', 'hotp'])->default(config('otp-shield.default_otp_type'));
             $table->unsignedInteger('digits')->default(config('otp-shield.digits'));
