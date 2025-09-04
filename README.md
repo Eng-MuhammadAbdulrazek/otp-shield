@@ -1,4 +1,3 @@
-
 # OTPSHIELD
 
 **OTPSHIELD** is a professional, plug-n-play **OTP/TOTP package for Laravel**.
@@ -18,9 +17,7 @@ It provides secure, time-based OTPs with:
 Require the package and dependencies via Composer:
 
 ```bash
-composer require spomky-labs/otphp
-composer require paragonie/constant_time_encoding
-composer require simplesoftwareio/simple-qrcode
+composer require medo19/otp-shield
 ```
 
 Add OTPSHIELD to your Laravel project (if not using auto-discovery):
