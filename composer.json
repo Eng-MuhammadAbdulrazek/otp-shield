@@ -1,0 +1,33 @@
+{
+    "name": "medo19/otp-shield",
+    "description": "A Laravel plug-n-play OTP/TOTP package",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Eng. Muhammad Abdulrazek",
+            "email": "eng.muhammadabdulrazek@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^12.28",
+        "spomky-labs/otphp": "^11.3",
+        "paragonie/constant_time_encoding": "^3.0",
+        "simplesoftwareio/simple-qrcode": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "OtpShield\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OtpShield\\OtpShieldServiceProvider"
+            ]
+        }
+    }
+}
