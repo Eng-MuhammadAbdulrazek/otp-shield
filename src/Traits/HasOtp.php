@@ -5,6 +5,7 @@ namespace OtpShield\Traits;
 use Illuminate\Support\Facades\Crypt;
 use OtpShield\Facades\OtpShield;
 use OtpShield\Models\Otp;
+use ParagonIE\ConstantTime\Base32;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 trait HasOtp
@@ -43,7 +44,7 @@ trait HasOtp
      */
     public function enableOtp(array $config = [])
     {
-        $secret = \ParagonIE\ConstantTimeEncoding\Base32::encodeUpper(random_bytes(20));
+        $secret = Base32::encodeUpper(random_bytes(20));
 
         return $this->otps()->create([
             'secret' => Crypt::encryptString($secret),
