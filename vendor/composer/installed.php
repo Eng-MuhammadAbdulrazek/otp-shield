@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'medo19/otp-shield',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'b4f2fc7f598b4c41ab481c1742c533be8f399e7e',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -446,9 +446,9 @@
             'dev_requirement' => false,
         ),
         'medo19/otp-shield' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'b4f2fc7f598b4c41ab481c1742c533be8f399e7e',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
