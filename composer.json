@@ -2,6 +2,7 @@
     "name": "medo19/otp-shield",
     "description": "A Laravel plug-n-play OTP/TOTP package",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Eng. Muhammad Abdulrazek",
