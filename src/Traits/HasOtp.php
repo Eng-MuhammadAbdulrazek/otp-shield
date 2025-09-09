@@ -122,7 +122,7 @@ trait HasOtp
      *
      * @return string|null SVG string or null if no active OTP exists
      */
-    public function getOtpQrCode(): ?string
+    public function getOtpQrCode($size = 300): ?string
     {
         $otp = $this->otps()->where('active', true)->first();
         if (!$otp)
@@ -136,6 +136,6 @@ trait HasOtp
             config('otp-shield.issuer')
         );
 
-        return QrCode::format('svg')->size(300)->generate($uri);
+        return QrCode::format('svg')->size($size)->generate($uri);
     }
 }
